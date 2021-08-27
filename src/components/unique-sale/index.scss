@@ -1,0 +1,12 @@
+.unique-sale {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-inline: 1.2rem;
+  .book-item {
+    margin: 0.4rem;
+  }
+  &__banner {
+    padding-block: 1.6rem;
+  }
+}

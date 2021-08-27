@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #C7E9F9;
+  padding: 1rem;
+  img {
+    max-width: 30px;
+    max-height: 13px;
+    //margin-right: 0.5rem;
+  }
+}

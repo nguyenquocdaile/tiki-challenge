@@ -1,0 +1,35 @@
+.flash-sale {
+  padding-bottom: 5.6rem;
+  .time-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    .time-item {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      padding: 8px;
+      
+      &:first-child {
+        color: #FC820A;
+        border-bottom: 1px solid #FC820A;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__banner {
+    padding-block: 1.6rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 1.2rem;
+    .book-item {
+      margin: 0.4rem;
+    }
+  }
+}

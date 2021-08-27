@@ -1,0 +1,36 @@
+.supper-sale {
+  background: #F7C65A;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 1.6rem 2.6rem;
+
+  &__list {
+    margin: 0 auto;
+    max-width: 318px;
+  }
+
+  .title {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.custom-slick {
+  .slick-active {
+    .slick-dot {
+      width: 24px;
+      background: #FC820A;
+    }
+  }
+  .slick-dot {
+    width: 16px;
+    height: 2px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}

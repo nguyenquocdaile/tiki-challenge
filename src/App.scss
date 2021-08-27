@@ -1,0 +1,27 @@
+.App {
+  width: 100%;
+  max-width: 36rem;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+  .home-tab {
+    background: #FCF4DD;
+  }
+  .MuiTabs-root {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    max-width: 36rem;
+    .MuiTab-labelIcon {
+      min-height: 5.6rem;
+    }
+    .MuiTab-root {
+      color: #81818A;
+      &.Mui-selected {
+        color: #FC820A;
+      }
+    }
+  }
+}
