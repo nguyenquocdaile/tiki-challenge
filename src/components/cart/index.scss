@@ -1,0 +1,53 @@
+.cart {
+  .header {
+    background-color: #FC820A;
+  }
+  .cart-header {
+    padding: 0 1.6rem 1.6rem;
+    background-color: #FC820A;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  .cart-body {
+    padding-inline: 1.6rem;
+  }
+
+  .detail-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-inline: 1.6rem;
+  }
+  .prices {
+    padding-inline: 1.6rem;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  .price-pay {
+    border-top: 1px solid #EBEBF0;
+    position: fixed;
+    bottom: 56px;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    max-width: 36rem;
+    text-align: center;
+    .prices__item {
+      padding: 0.8rem 1.6rem;
+    }
+    .pay-button {
+      min-width: 328px;
+      height: 40px;
+      background: #FC820A;
+      color: #fff;
+      font-size: 1.6rem;
+      border-radius: 20px;
+      border: none;
+    }
+  }
+}

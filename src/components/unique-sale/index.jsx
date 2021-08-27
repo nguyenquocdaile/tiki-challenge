@@ -7,8 +7,6 @@ import UNIQUESALEBANNER from '../../images/unique-sale-banner.png'
 const UniqueSale = ({handleAddToCart}) => {
   const [uniqueSaleData, setUniqueSaleData] = useState([]);
 
-  console.log('handleAddToCart', handleAddToCart);
-
   useEffect(() => {
     const fetchUniqueSaleData = async () => {
       const response = await axios.get('https://tiki.vn/api/personalish/v1/blocks/listings?limit=8&is_mweb=1&category=8322&page=1');
@@ -28,13 +26,8 @@ const UniqueSale = ({handleAddToCart}) => {
         {
           uniqueSaleData.slice(4).map(item => (
             <BookItem
-              id={item.id}
-              key={item.id}
-              thumbnailURL={item.thumbnail_url} 
-              name={item.name}
-              listPrice={item.list_price}
-              discount={item.discount}
-              price={item.price}
+              key={item.id} 
+              item={item}
               handleAddToCart={handleAddToCart}
             />
           ))

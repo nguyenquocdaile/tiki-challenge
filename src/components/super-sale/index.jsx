@@ -7,7 +7,7 @@ import BookItem from '../book-item';
 import './index.scss';
 import SlickDot from '../../images/Slick.svg'
 
-const SuperSale = () => {
+const SuperSale = ({handleAddToCart}) => {
   const [superSaleData, setSupperSaleData] = useState([]);
 
   useEffect(() => {
@@ -46,12 +46,9 @@ const SuperSale = () => {
           {
             superSaleData.map(item => (
               <BookItem
-                key={item.id}
-                thumbnailURL={item.thumbnail_url} 
-                name={item.name}
-                listPrice={item.list_price}
-                discount={item.discount}
-                price={item.price}
+                key={item.id} 
+                item={item}
+                handleAddToCart={handleAddToCart}
                 positionHorizontal={true}
               />
             ))

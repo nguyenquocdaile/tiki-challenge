@@ -6,14 +6,13 @@ import FlashSale from './flash-sale';
 import Header from './header';
 
 const  Home =({handleAddToCart}) => {
-  
   return (
     <>
       <Header />
       <BannerBlock />
       <UniqueSale handleAddToCart={handleAddToCart}/>
-      <SuperSale />
-      <FlashSale />
+      <SuperSale handleAddToCart={handleAddToCart}/>
+      <FlashSale handleAddToCart={handleAddToCart}/>
     </>
   )
 }

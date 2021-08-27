@@ -4,7 +4,7 @@ import FLASHSALEBANNER from '../../images/flash-sale-banner.png'
 import './index.scss'
 import BookItem from '../book-item'
 
-function FlashSale(props) {
+function FlashSale({handleAddToCart}) {
   const [flashSaleData, setFlashSaleData] = useState([]);
 
   useEffect(() => {
@@ -32,12 +32,9 @@ function FlashSale(props) {
         {
           flashSaleData.slice(4).map(item => (
             <BookItem
-              key={item.id}
-              thumbnailURL={item.thumbnail_url} 
-              name={item.name}
-              listPrice={item.list_price}
-              discount={item.discount}
-              price={item.price}
+            key={item.id} 
+            item={item}
+            handleAddToCart={handleAddToCart}
             />
           ))
         }
